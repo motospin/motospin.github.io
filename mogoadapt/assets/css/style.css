@@ -499,6 +499,8 @@ hr {
 
 .devices__item {
     display: block ;
+    max-width: 100%;
+    height: auto;
 }
 
 .devices__item--iphone {
@@ -514,12 +516,20 @@ hr {
 
 .wedo {
     display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
 }
 
 .wedo__item {
     width: 50%;
+    padding: 0 15px;
 }
 
+.wedo__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 
 /* accordion */
 
@@ -1289,6 +1299,10 @@ font-weight: 700;
          padding: 40px 0;
     }
 
+    .section--devices {
+        padding-bottom: 0;
+    }
+
         /* card */
         .card {
             margin-top: 50px;
@@ -1315,6 +1329,10 @@ font-weight: 700;
     }
 
     /*services*/
+    .services {
+        justify-content: center;
+    }
+
     .services__item {
         width: 100%;
         max-width: 400px;
@@ -1326,6 +1344,15 @@ font-weight: 700;
         left: 0;
     }
 
+    /* wedo */
+
+    .wedo__img {
+        display: none;
+    }
+
+    .wedo__item {
+        width: 100%;
+    }
 }
 
 @media (max-width: 575px) {
@@ -1372,5 +1399,19 @@ font-weight: 700;
    .stat__count {
        font-size: 50px;
    }
+
+    /* devices */
+   .devices {
+    max-width: 320px;
+   }
+
+   .devices__item--iphone {
+       width: 180px;
+       bottom: -50px;
+       right: -80px;
+
+   }
+
 }
+
 
