@@ -326,9 +326,7 @@ hr {
 }
 
 
-.card__inner {
-    width: 380px;
-}
+
 
 .card__inner:hover .card__img {
   transform: translate3d(-10px, -10px, 0);  
