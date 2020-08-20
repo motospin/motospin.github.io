@@ -97,7 +97,7 @@ hr {
 /* Header */
 .header {  
     width: 100%;
-    padding-top: 10px;
+    padding-top: 30px;
 
     position: absolute;
     top: 0;
@@ -118,7 +118,7 @@ hr {
    color: #ffffff;
 }
 
-.header--fixed {
+.header.fixed {
     padding: 10px 0;
 
     background-color: #ed8b8d;
@@ -127,6 +127,7 @@ hr {
     position: fixed;
     top: 0;
     left: 0;
+    right: 0;
 
     transform: translate3d(0, 0, 0);
 }
