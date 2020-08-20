@@ -24,7 +24,7 @@ $(function() {
 
 
     
-    /* Smooth Scroll */
+    /* wsmooth Scroll */
     $("[data-scroll]").on("click", function(event){
         event.preventDefault();
 
@@ -46,7 +46,7 @@ $(function() {
 
 });
 
-/* Nav toggle */
+    /* nav toggle */
 $("#nav_toggle").on("click", function(event){
     event.preventDefault();
     
@@ -54,20 +54,21 @@ $("#nav_toggle").on("click", function(event){
     $("#nav").toggleClass("active");
    });
 
-/* Collapse */
+    /* collapse */
 $("[data-collapse").on("click", function(event){
     event.preventDefault();
 
     var $this = $(this)
         blockId = $this.data('collapse');
 
-    $this.toggleClass("active");
+    $(blockId).slideToggle();
 });
 
-/* Slider */
+    /* slider */
 $("[data-slider]").slick({
     infinitie: true,
     fade: false,
     slideToShow: 1,
     slideToScroll: 1
+
 });

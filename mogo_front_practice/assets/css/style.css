@@ -113,6 +113,7 @@ hr {
 }
 
 .header__logo {
+    cursor: pointer;
    font-size: 30px;
    font-weight: 700; 
    color: #ffffff;
@@ -204,6 +205,10 @@ hr {
     right: 24px;
     z-index: 1;
 }
+
+.nav-toggle:focus {
+    outline: 0;
+    }
 
 .nav-toggle__item {
     display: block;
@@ -706,11 +711,16 @@ hr {
 /* reviews */
 
 .reviews {
-    padding: 0 110px;
     position: relative;
 }
 
+.reviews .slick-slider {
+    padding: 0 110px;
+}
+
+
 .reviews__item {
+    min-height: 210px;
     padding-left: 205px;
     position: relative;
 }
@@ -755,16 +765,26 @@ hr {
     background-color: #f38181;
 }
 
-.reviews__btn {
+.slick-arrow {
+    cursor: pointer;
+    display: block;
     font-size: 0;
     color: transparent;
 
+    border: 0;
+    background: none;
+    
     position: absolute;
     top: 50%;
     z-index: 1;
     transform: translateY(-50%);
 }
-.reviews__btn:after {
+
+.slick-arrow:focus {
+    outline: 0;
+}
+
+.slick-arrow:after {
     content: "";
     display: block;
     width: 22px; 
@@ -775,12 +795,13 @@ hr {
 
 }
 
-.reviews__btn--Pref {
+.slick-prev {
     left: 0;
     transform: rotate(-45deg);
 }
 
-.reviews__btn--Next {
+.reviews__btn--Next,
+.slick-next {
     right: 0;
     transform: rotate(135deg);
 }
@@ -1414,7 +1435,7 @@ font-weight: 700;
     }
 
      /* reviews */
-     .reviews {
+     .reviews .slick-slider {
          padding: 0 60px;
      }
 
@@ -1486,6 +1507,10 @@ font-weight: 700;
         left: 0;
 
         background-color: #ed8b8d;
+    }
+
+    .nav.active {
+        display: block;
     }
 
     .nav__link {
@@ -1562,7 +1587,7 @@ font-weight: 700;
     }
 
     /* reviews */
-    .reviews {
+    .reviews .slick-slider {
         padding: 0 30px;
     }
     .reviews__photo {
@@ -1582,13 +1607,11 @@ font-weight: 700;
         padding-left: 0;
     }
 
-    .reviews__btn {
+    .slick-arrow {
         top: 45%;
     }
 
-    .reviews__btn--Pref {
-        left: -4px;
-    }
+   
 
     /*works*/
     .works {
@@ -1769,6 +1792,9 @@ font-weight: 700;
         font-size: 10px;
     }
 
+    .reviews__author {
+        font-size: 18px;
+    }
 }
 
 
