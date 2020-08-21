@@ -269,7 +269,7 @@ p {
 ===================*/
 
 .team {
-    margin: 100px 0;
+    margin: 70px 0;
 }
 
 .team__inner {
@@ -279,6 +279,7 @@ p {
 }
 
 .team__item {
+    margin-bottom: 30px;
     width: 25%;
     padding: 0 15px;
 }
@@ -306,8 +307,47 @@ p {
 }
 
 .team__text {
+    margin-bottom: 20px;
+
     font-size: 14px;
     line-height: 1.5;
     color: #6c7279;
 }
 
+/* Social
+===================*/
+
+.social {
+    display: flex;
+}
+
+.social__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin-right: 4px;
+
+    border: 1px solid #fff;
+
+    transition: background 0.1s linear;
+}
+
+.social__item:hover {
+    background-color: #e8ecee;
+}
+
+.social__item:hover .social__icon 
+{
+    fill: #000;
+}
+
+.social__icon {
+    display: block;
+    height: 18px;
+
+    fill: #c6cacc;
+
+    transition: fill 0.1s linear;
+}
