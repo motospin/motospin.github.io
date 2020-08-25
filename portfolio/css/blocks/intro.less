@@ -1,6 +1,5 @@
 // main: ../style.less
 
-
 .intro__inner {
     display: flex;
     padding-top: 100px;
@@ -9,6 +8,8 @@
     
     background: url("../images/intro/symbols.png") right bottom no-repeat; 
     border-bottom: 1px solid fade(@gray, 30%);
+
+  
 }
 
 .intro__content {
@@ -40,4 +41,9 @@
     bottom: -1px;
     right: 0;
     z-index: 1;
+
+    &:hover {
+        transform: translate(-15px);
+        transition: transform 0.2s linear;
+    }
 }

@@ -1,0 +1,61 @@
+// main: ../style.less  
+
+.about {
+    margin: 8.4rem 0;
+}
+
+
+.about__inner {
+display: flex;
+max-width: 1090px;
+}
+
+.about__photo, /* пример того, как разбить на 2 части блоки, обязязательно display: flex;*/
+.about__content {
+    width: 50%;
+}
+
+.about__content {
+    margin-top: 2rem;
+    padding-left: 3.2rem;
+}
+
+.about__title {
+    font-size: 3rem;
+    color: @black;
+    font-weight: 700;
+}
+
+.about__bigtitle {
+    position: relative;
+    left: -10px;
+    margin-bottom: 1.4rem;
+    font-size: 6.1rem;
+    line-height: 1.1;
+    font-weight: 700;
+    color: #dedede;
+}
+
+.about__text {
+    font-size: 0.8rem;
+    line-height: 2;
+    font-weight: 300;
+    color: @gray;
+
+    margin-bottom: 2.8rem;
+}
+
+.about__photo {
+    position: relative;
+
+    &:hover {
+    background: url("../images/11.png");
+    transform: translateY(-10px);
+    transform: translateY(-10px);
+    transform: translateY(-10px);
+    transition: transform 0.2s linear;
+    box-shadow: 2px 2px 10px fade(#000, 24%); 
+}
+}
+
+
