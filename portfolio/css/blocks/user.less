@@ -5,13 +5,23 @@
 }
 
 .user__avatar {
-    width: 57px;
-    height: 57px;
+    width: 70px;
+    height: 70px;
 
     img {
         border-radius: 50%;
     }
+    &:hover {
+        animation-play-state:paused;  /* остановка движения при наведении*/
+    }
+    animation: rotate 17s linear infinite;
+}
 
+.user__photo {
+    width: 70px;
+    height: 70px;
+
+    
 }
 
 .user__content {
@@ -19,6 +29,7 @@
 }
 
 .user__name {
+    margin-top: 1rem;
     font-size: 1.06rem;
     line-height: 1.2;
     color: @black;
