@@ -46,31 +46,14 @@ margin: 0 auto;
 
     position: relative;
 
-    animation-name: rotate;
-    animation-duration: 17s ;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-
-    
+    animation: rotate 17s linear infinite;
 }
 
 .reviews__photo:hover  {
     animation-play-state:paused;  /* остановка движения при наведении*/
     }
 
-@keyframes rotate{
-    0%{
-        transform: rotate(0deg);
-    }
 
-    50%{
-        transform: rotate(180deg);
-    }
-
-    100%{
-        transform: rotate(360deg);
-    }
-}
 
 /*===========АНИМАЦИЯ ВРАЩЕНИЯ КРУГА=================*/ 
 
