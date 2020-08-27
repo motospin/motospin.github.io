@@ -19,7 +19,7 @@
     text-transform: uppercase;
     text-decoration: none;
     text-align: center;
-    transition: backround-color 0.2s linear, color 0.2s linear, box-shadow 0.2s linear;
+    transition: backround-color 0.2s linear, color 0.2s linear, box-shadow 0.2s linear, border-color 0.1s linear;
 
     &:focus {
         outline: none;
@@ -29,6 +29,7 @@
             background-color: @black;
             box-shadow: 2px 2px 10px fade(#000, 24%);
             color: @white;
+            border-color: @black;
         }
 
         + .btn {
@@ -47,13 +48,8 @@
             border-width: 2px;
             position: relative;
             
-
-            animation: btn 5s infinite alternate-reverse;
         }
 
         
 }
 
-.btn--sm:hover  {
-    animation-play-state:paused;  /* остановка движения при наведении*/
-    }
