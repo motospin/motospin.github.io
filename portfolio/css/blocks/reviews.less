@@ -33,6 +33,8 @@ margin: 0 auto;
     text-align: center;
 }
 
+/*===========АНИМАЦИЯ ВРАЩЕНИЯ КРУГА=================*/ 
+
 .reviews__photo {
     display: block;
     margin: 0 auto;
@@ -44,28 +46,33 @@ margin: 0 auto;
 
     position: relative;
 
-    animation-name: gray-circle;
-    animation-duration: 1s;
+    animation-name: rotate;
+    animation-duration: 17s ;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    animation-direction: alternate-reverse;
+
+    
 }
 
-@keyframes gray-circle{
+.reviews__photo:hover  {
+    animation-play-state:paused;  /* остановка движения при наведении*/
+    }
+
+@keyframes rotate{
     0%{
-        left: 0px;
+        transform: rotate(0deg);
     }
 
     50%{
-
+        transform: rotate(180deg);
     }
 
     100%{
-        left: 5px;
+        transform: rotate(360deg);
     }
 }
 
-
+/*===========АНИМАЦИЯ ВРАЩЕНИЯ КРУГА=================*/ 
 
 
 .reviews__name {
