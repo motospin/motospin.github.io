@@ -147,6 +147,7 @@ a{
     font-weight: 800;
     line-height: 36px;
     outline: none;
+    
     span{
         padding: 17px 57px 15px 17px;
         background-color: $green;
@@ -175,7 +176,7 @@ a{
         }
     }
 }
-
+  
 
 /*===========     Holder, SURF         ============*/ 
 
@@ -257,7 +258,9 @@ a{
 .star-list{
     li{
         display: inline-block;
-        margin-left: -25px;
+        & + li{
+            margin-left: -25px;
+        }
     }
 }
 
