@@ -14,6 +14,8 @@ body {
     color: #fff;
     text-transform: uppercase;
     background-color: #171919; /* при плохом инете будет показывать черный экран при подгрузке фонового изображения */
+    min-width: 320px;
+    overflow-x: hidden;    /* Выключает нижний скролл при анимации */
 }
 
 
@@ -82,16 +84,26 @@ a{
 }
 
 .animate-malibu {
-    animation-delay: 9.1s;
+    animation-delay: 4.5s;
+  }
+
+  .anim1{
+    animation-delay: 1.5s;
+  }
+  .anim2{
+    animation-delay: 2.5s;
   }
 
 .title{
-    span{
+    div{
         font-weight: 800;
         font-size: 20em;
         color: rgba(#fff, .02);
         position: relative;
         transform: translateX(-50px);
+        display: inline-block;
+    }
+    span{
         display: inline-block;
     }
     h3{
@@ -147,7 +159,7 @@ a{
     font-weight: 800;
     line-height: 36px;
     outline: none;
-    
+
     span{
         padding: 17px 57px 15px 17px;
         background-color: $green;
